@@ -1,0 +1,95 @@
+ul{
+    margin-top:120px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+ul li {
+cursor: pointer;
+position: relative;
+padding: 20px 35px 20px 100px;
+width:45%;
+margin-left:310px;
+background: white;
+font-size: 18px;
+border:1px solid rgb(167, 164, 164);
+border-radius: 3px;
+list-style-type: none;
+}
+
+ul li.checked {
+text-decoration: line-through;
+}
+
+ul li.checked::before {
+content: '';
+position: absolute;
+border-color: rgb(110, 80, 80);
+border-style: solid;
+background-color: none;
+border-width: 0 2px 2px 0;
+top: 20px;
+left: 30px;
+transform: rotate(45deg);
+height: 15px;
+width: 7px;
+}
+
+  
+
+.header {
+color: black;
+padding-left:350px;
+padding-top:50px;
+font-size: 25px;
+font-family: 'Bahnschrift Light';
+
+}
+
+
+.header1{
+padding-left:50px;
+background-color: black;
+color:rgb(167, 164, 164);
+font-size:15px;
+padding-top:10px;
+padding-bottom:10px;
+font-family: 'Bahnschrift Light';
+}
+
+/* Style the input */
+input {
+margin-top:30px;
+margin-left:407px;
+border: 1px solid rgb(165, 165, 165);
+border-radius: 3px;
+width: 40%;
+padding: 10px;
+float: left;
+font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+padding: 10px;
+position: absolute;;
+margin-top:30px;
+margin-left:30px;
+background: #2d637c;
+color: rgb(255, 254, 254);
+font-size: 16px;
+cursor: pointer;
+border-radius: 3px;
+}
+
+.addBtn:hover {
+background-color: rgb(123, 168, 211);
+}
+
+.todo-trash{
+    color:red;
+    position: absolute;
+    left:750px;
+}

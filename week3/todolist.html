@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body> 
+
+  <h1 class = "header1">ToDo List</h1>
+  <h2 style="margin:5px"  class="header">ToDo List</h2>
+  <input type="text" id="myInput" placeholder="New Task">
+  <span onclick="newElement()" class="addBtn">Add</span>
+
+
+<ul id="my-list">
+  <li class="checked"><span class="todo-text"></span>First item <span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+    <li><span class="todo-text"></span>Second item <span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+    <li><span class="todo-text"></span>Third item <span class="todo-trash"><i class="fas fa-trash-alt"></i></span></li>
+</ul>
+
+<script src = "list.js"></script>
+
+</body>
+</html>
