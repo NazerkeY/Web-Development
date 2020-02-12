@@ -1,0 +1,31 @@
+.rating{
+  font-size:15px;
+  color:red;
+}
+i{
+  color: rgb(64, 113, 219);
+}
+
+.aRef{
+  text-decoration: underline;
+}
+.btn{
+  border:1px solid rgb(16, 51, 128);
+  padding:7px 15px;
+  border-radius:5px;
+  background-color: rgb(64, 113, 219);
+  color:white; 
+}
+
+#line{
+  margin-top:25px;
+  border:1px solid black;
+  padding:0;
+  
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/

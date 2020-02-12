@@ -1,0 +1,29 @@
+
+
+<div *ngFor="let product of products">
+    <h3>
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+      <br>
+      <p class = "rating"> <i>Rating:</i> {{product.rating}}</p>
+    </a>
+  </h3>
+
+  <img src = {{product.image}} width = "200px">
+
+
+   <p *ngIf="product.description">
+  <b> Description: </b> {{ product.description }}
+  </p>
+    <p><a href = {{product.ref}} class = "aRef">More infromation</a></p>
+
+    <a href="https://telegram.me/share/url?url={{ product.ref }}" data-text="Take a look at this new item! You can read more information there!:" class = "btn">Share</a>
+    <hr id = "line">
+
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->
