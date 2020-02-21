@@ -24,22 +24,4 @@ export class ProductItemComponent implements OnInit {
     this.productService.getProduct(id).subscribe(product => this.product = product);
   }
 
-  zoomIn(id) {
-    const main = document.getElementById('main') as HTMLImageElement;
-    const need = document.getElementById(id) as HTMLImageElement;
-    main.src = need.src;
-  }
-
-  zoomOut(id) {
-    const main = document.getElementById('main') as HTMLImageElement;
-    const need = document.getElementById('1') as HTMLImageElement;
-    main.src = need.src;
-  }
-
-  Share() {
-    window.open(this.product.link);
-  }
-
-
-
 }

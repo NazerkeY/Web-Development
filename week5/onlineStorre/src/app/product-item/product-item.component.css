@@ -25,6 +25,11 @@
     background-image: url(https://cdn.pixabay.com/photo/2017/06/13/13/51/marble-2398946__340.jpg);
   }
 
+.value{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+}
+
   .info{
     margin-left:30px;
     margin-bottom:30px;
