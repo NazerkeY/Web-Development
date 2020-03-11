@@ -1,0 +1,5 @@
+<h3>Yeginay Nazerke 18BD110316</h3>
+ <h1 class = "header">Bookshelf</h1>
+    <div class="nav">
+        <a *ngFor="let category of categories" routerLink="/category/{{category.id}}"> {{category.name}} </a>
+      </div>

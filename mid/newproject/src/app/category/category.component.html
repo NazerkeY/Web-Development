@@ -1,0 +1,11 @@
+<h2 class = "header">{{category.name}}</h2>
+<div class="books">
+  <div class="book-item" *ngFor="let book of books">
+
+    <h3>
+      <a class = "item" routerLink="/book-id/{{book.id}}" [title]="book.title + ' details'" >
+        {{ book.title }}
+      </a>
+    </h3>
+  </div>
+</div>

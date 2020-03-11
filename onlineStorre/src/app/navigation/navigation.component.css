@@ -1,0 +1,32 @@
+.header{
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  margin-left:70px;
+
+}
+.image{
+  position: absolute;
+}
+.nav{
+margin-top:50px;
+margin-left:10px
+}
+  .nav a {
+    text-decoration: none;
+    border: 1px solid red;
+    padding:10px 30px;
+    background-color: red;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 15px;
+    text-align:center;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white
+  }
+  
+  .nav a:hover {
+    color: black;
+    background-color: tomato;
+  }
+
