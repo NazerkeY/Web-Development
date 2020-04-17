@@ -23,11 +23,12 @@ class Vacancy(models.Model):
     salary = models.FloatField()
     company_id = models.ForeignKey(Company, on_delete = models.CASCADE, default=1)
 
+
     def to_json(self):
         return{
             'id':self.id,
             'name':self.name,
             'description':self.description,
             'salary':self.salary,
-            'company':self.company_id.id
+            'company':self.company_id.to_json()
         }
