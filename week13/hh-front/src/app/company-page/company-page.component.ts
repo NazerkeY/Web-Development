@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {Vacancy} from '../models'
+import { VacancyService } from '../vacancy.service';
 import { ActivatedRoute } from '@angular/router';
-import {CompanyService} from "../company.service";
-import {Company} from "../models";
 
 @Component({
   selector: 'app-company-page',
@@ -9,18 +9,21 @@ import {Company} from "../models";
   styleUrls: ['./company-page.component.css']
 })
 export class CompanyPageComponent implements OnInit {
-  company: Company;
-
-  constructor(private companyService: CompanyService, private route: ActivatedRoute) { }
+  vacancies: Vacancy[]
+  constructor(private vacancyService: VacancyService,
+    public route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
-    this.getCompany();
+    this.getVacanciesList();
   }
 
-  getCompany() {
-    const id = +this.route.snapshot.paramMap.get('id');
-
-    this.companyService.getCompany(id).subscribe(company => this.company = company);
+  getVacanciesList() {
+    let id = this.route.snapshot.paramMap.get('id');
+    id = id.substr(1);
+    this.vacancyService.getVacancyList(id)
+      .subscribe(vacancies => {
+        this.vacancies = vacancies;
+      });
   }
-
 }

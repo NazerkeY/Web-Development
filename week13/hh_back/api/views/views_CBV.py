@@ -48,3 +48,28 @@ class VacancyDetailAPIView(APIView):
         vacancy = self.get_object(vacancy_id)
         vacancy.delete()
         return Response({'deleted': True})
+
+
+class CompanyVacancyAPIView(APIView):
+    def get_object(self,id):
+        try:
+          return Vacancy.objects.filter(id=id)
+        except Vacancy.DoesNotExist as e:
+              return Response({'error': str(e)})
+    def get(self,request,company_id):
+        vacancies = self.get_object(company_id)
+        serializer = VacancySerializer(vacancies, many=True)
+        return Response(serializer.data)
+
+    def put(self, request, company_id):
+         vacancies = self.get_object(company_id)
+         serializer = VacancySerializer(instance=vacancies, data=request.data)
+         if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+         return Response({'error': serializer.errors})
+
+    def put(self, request, company_id):
+        vacancies = self.get_object(company_id)
+        vacancies.delete()
+        return Response({'deleted': True})
