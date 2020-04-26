@@ -1,19 +1,19 @@
-export class Company {
-  id: number;
+export interface Company {
+    id: number;
   name: string;
   description: string;
   city: string;
   address: string;
 }
 
-export class Vacancy {
+export interface Vacancy {
     id: number;
     name: string;
     description: string;
     salary: number;
-    company_id: number;
-    }
+    company: number;
+}
 
 export class LoginResponse {
-  token: string;
-}
+    token: string;
+    }

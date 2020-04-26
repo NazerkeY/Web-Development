@@ -1,30 +1,30 @@
-import {Component, OnInit} from '@angular/core';
-import {CompanyService} from "./company.service";
+import { Component, OnInit } from '@angular/core';
+import { CompanyService } from "./company.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
-  title = 'servicesGroup2';
+export class AppComponent {
+  title = 'hh-front';
 
   logged = false;
 
   username = '';
   password = '';
 
-  constructor(private companyService: CompanyService) {}
+  constructor(private categoryService: CompanyService) { }
 
-  ngOnInit(){
+  ngOnInit() {
     let token = localStorage.getItem('token');
-    if (token){
+    if (token) {
       this.logged = true;
     }
   }
 
-  login(){
-    this.companyService.login(this.username, this.password)
+  login() {
+    this.categoryService.login(this.username, this.password)
       .subscribe(res => {
 
         localStorage.setItem('token', res.token);
@@ -36,9 +36,8 @@ export class AppComponent implements OnInit {
       })
   }
 
-  logout(){
+  logout() {
     localStorage.clear();
     this.logged = false;
   }
-
 }

@@ -4,11 +4,11 @@ import { VacancyService } from '../vacancy.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-company-page',
-  templateUrl: './company-page.component.html',
-  styleUrls: ['./company-page.component.css']
+  selector: 'app-vacancy',
+  templateUrl: './vacancy.component.html',
+  styleUrls: ['./vacancy.component.css']
 })
-export class CompanyPageComponent implements OnInit {
+export class VacancyComponent implements OnInit {
   vacancies: Vacancy[]
   constructor(private vacancyService: VacancyService,
     public route: ActivatedRoute) {
