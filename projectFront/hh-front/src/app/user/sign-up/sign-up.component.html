@@ -1,0 +1,13 @@
+<div id = "container">
+  <form action="" id="registration-form">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIYAAACCCAMAAAC0NkC1AAAAY1BMVEUAre/////X8PwTr/IArfIAqfCs4Pue1/cAqe4Ape675fqEz/Vkw/TQ7fs3s/Dt+f4/uPHE5/rg9P2W0/b3/f8hsO9WvvKO0faj3PgAtPeW2/sxvfohuPc9v/i15fwAq/Z0y/VrogC5AAAEk0lEQVR4nO3a63arKBQAYDVgQGNQi5ekqeP7P+WggBWvkAadtQbW+aFB8XNvBKXH800LCT9fiGeKeH6Dz5fAjEHqF/Q+X8wY5GkF4XkXAwaLBLCCMGHQ+tsWQp9Bw2876TBhkNBaOvQZtP6xi9BhsHTYRuwzqK1H1IRBjojELiO03if2GdTOsG3GoMdFYp3BEPBIxTKj+TkuHWsMNmIeG4klBm0O7RMrjOjgPrHIYLPoKYgxgzblSYYxI/q5nKeQjObnn/MMgkGjU56OCYPcwNmKjhGcjuCMy9kIx3AMx3AMx3AMx3AMx3AMx3CMHQaCiP1bWncCkFUt1qwX1J+CjBmovX6xcl04uuQ1qYECxP05lTEDR3ypoZgdjGJec9u5t3GBQX9KPm9NkzHvMuAdRvJxxlvR+CtjfuL/ORr85/ESzJ+jAdYWdLaTgrFXPBCWVx0zcF/kEAL5bn+6rIAYQox+GQDjomC/Lt3DFgOmIe02gqrgp46Sgvif1mMgKvq9msnvdb/ZQi9mAHLDkgFL3m7WenPIBsOrqFy3zVs8iQbkWwlvEWZ8afXueSk/KQR8vCiHaNT+0Fo5c6wzaOiPSoXUaAhGpjBIxyCcwa9OC8mIRo3RdjofbERDLRXcj8aIIQpBKFlq7QbfZFAWyTljNRqiBBguMujFhJE3dSC3M/wGIxoz8jDM5fYV6jPa7tErZbspMExKnuRPODBo2bV2E92eXLQZcf94INH3/Ssy6KL98wDBRQ5fPuXdAd7kLSJNRiL2YSjv3IRBxVgjGREWrfND/VCXEYv0gVLGcc5YT8qXuKxkyAkAtXw/0GWkw/gvsnI3iAaRU5lgdFW8iByrc53ORI9E/04NopEPs810hr2TNxlwnbEajQSvMYpJuLSTUqwnRUYjmjKyCWOUFBEN5Zo6XTTl+wT8geGX0y6qvHlsPbDiRFjL/VUGyHcZIVZbb3SfFJ/P7ui+NHwhcUw/OmDx+xaDpnz4Ek+/H2sz2EjHvtJui4M5Fr8mqQcLEedNBhvM2TefNwzm6rvp9tSWhGEi330SOJ7ahoNIlg3z1SbDp0nYDBNlYzC1KUWd6GV+lLLNUEoB3mN0g7PygZDPj9FnTF+/Nl4Cm/F51+7K4zdzdBvV5sEeI1c0lcFLoPf7Eus/+/OU7xQ5AHSXL0bjBl1m3LPhcNrqvBLDr6wrSYHTrLs1mtcFbxTceA3/rw2wCHN2TRrEUJwSdYyo33zK+0V1v994uE261khQefMFksVlFl66j6yiLMv76LtC1oi9IhXV4LeCb4F5awilfWtLqzR7i06rn3ta1dqH/4fXvhzDMRzDMRzDMRzDMU5nsI+5TxdzBnhV148XYsgAr6uy8vmpYsSAj6cVhBEDfD/pfoOWGehlKxIGDGQtHQYM+LKXDm2GzT6hzQCPamEt42CG/XRoMIDVp0OTwR7RA9Kxw2B94qBIbDDsDdsGDPCKD0vHKgOBoxELDBaJQ9OxyACP4yMxY4BHewpCYcBLe0I6JgyWjtMQAwM92mD/YMsMdFqf+GUAdNLToTCS19mR6Bnk1D4hy78o0lotEz0jLwAAAABJRU5ErkJggg==" id="logo" alt="logo">
+    <h3 id = "main-heading">Sign up & Save</h3>
+    <p id = "secondary-heading" class = "light-text">Create a new account</p>
+    <input [(ngModel)] = "register.email" type="email" name="email" placeholder="Email" id="email-input" class = "input">
+    <input [(ngModel)] = "register.username" type="text" name="username" placeholder="Username" id="username-input" class="input">
+    <input [(ngModel)] = "register.password" type="password" name="pass" placeholder="Password" id="pass" class = "input">
+    <button (click)="registerUser()" id = "signup-btn">Sign up</button>
+    <p id ="register-warning">Already have an account?<a href = "http://localhost:4200/login" class = "text link">Sign in</a></p>
+  </form>
+  <div id = "bg-image"></div>
+</div>

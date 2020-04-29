@@ -1,0 +1,104 @@
+#container{
+  width: 100%;
+  height: 100%;
+  padding: 0rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+#login-form{
+  height: 125%;
+  max-width: 70%;
+  padding: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family:'Raleway', sens-serif;
+  grid-auto-rows: min-content;
+  grid-row-gap: 2rem;
+  align-content: center;
+}
+
+#logo, #main-heading, #secondary-heading, #email-input, #pass, #login-btn, #register-warning{
+  grid-column:1/3;
+}
+
+#remember-section{
+  display: flex;
+  height: 100%;
+  align-items:center;
+}
+
+#check{
+  margin-right:0.25rem;
+}
+
+.light-text{
+ color:#424242
+}
+
+
+
+.text{
+  color:#795548
+}
+
+.link{
+  text-decoration:none;
+}
+
+.link:hover{
+  color:black;
+  text-decoration:underline;
+}
+
+#check{
+  margin-right:0.25rem;
+}
+
+
+#logo{
+  width:25%;
+
+}
+
+#bg-image{
+  width:100%;
+  height:128.5%;
+  background:url("https://images.unsplash.com/photo-1471440671318-55bdbb772f93?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80") no-repeat center center/cover;
+}
+
+.input{
+   width:100%;
+   padding: 0.75rem 1rem;
+   border-radius:10px;
+   border:1px solid #eeeeee;
+   outline:none;
+   background:#f5f5f5;
+}
+
+.input::placeholder{
+   font-family: 'Raleway', sans-serif;
+}
+
+#login-btn{
+  width:100%;
+  padding:0.5rem 0rem;
+  border:none;
+  border-radius:10px;
+  background:#212121;
+  color:white;
+  font-size:1.2rem;
+  font-family:'Raleway', sens-serif;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.login-btn:hover{
+  background:black;
+}
+
+
+
+
+
